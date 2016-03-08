@@ -74,4 +74,6 @@ theme: apollo         #next
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+- type: git
+  repo: git@github.com:flink-china/flink-china-blog.git
+  branch: gh-pages

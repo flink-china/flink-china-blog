@@ -29,7 +29,7 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
 6. 通过提交 [Pull Request](https://help.github.com/articles/using-pull-requests/) 的方式提交你的翻译结果。
 7. 在 PR 的评论中 @flink-china/review 邀请校对人员进行审核。
 
-翻译的时候，我们建议您直接在原 markdown 文件上进行翻译，也就是直接将原文档中的英文替换成你翻译的中文，文中原有的目录、公式、代码、表格等内容都不用动。更多翻译细则请参考 [README](https://github.com/flink-china/flink-china-doc#翻译)。
+翻译的时候，我们建议您直接在原 markdown 文件上进行翻译，也就是直接将原文档中的英文**替换**成你翻译的中文，文中原有的目录、公式、代码、表格等内容都不用动。更多翻译细则请参考 [README](https://github.com/flink-china/flink-china-doc#翻译)。
 
 译文需要至少一位校对人员 +1 后才能被 merge 。
 

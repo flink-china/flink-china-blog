@@ -1,6 +1,4 @@
-title: About me
-date: 2016-03-08 10:18:00
----
+Flink China Blog 的文档仓库。
 
 Flink China 由一群 Flink 爱好者成立于 2016 年 3 月，致力于让国内用户能不受语言限制，能在第一时间学习到新兴的 Apache Flink 相关技术，以及国外有关流计算的先进技术。
 
