@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Apache Flink 官方文档翻译开源项目 · Flink China</title><meta name="description" content="Apache Flink 官方文档翻译开源项目 - Apache Flink China"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/flink.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/flink.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="http://doc.flink-china.org" target="_blank" class="nav-list-link">中文文档</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">关于</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Apache Flink 官方文档翻译开源项目</h1><div class="post-time">2016年3月8日</div><div class="post-content"><p>Flink 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，并在其上建立了批处理和流处理引擎。</p>
+<p>Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人员提供有价值的中文资料，并推动 Flink 在国内的发展。希望能够对大家的工作和学习有所帮助。</p>
+<p>本次翻译主要内容是 <a href="https://ci.apache.org/projects/flink/flink-docs-master/" target="_blank" rel="external">Flink 官方文档 1.0 版本</a>，也就是即将发布的下一个大版本。您可以浏览 <a href="http://doc.flink-china.org/" target="_blank" rel="external">Flink 中文文档</a> 查看我们目前的翻译进度。</p>
+<a id="more"></a>
+<h2 id="参与方式"><a href="#参与方式" class="headerlink" title="参与方式"></a>参与方式</h2><p>我们主要以开源协作的方式来组织翻译，您可以浏览我们在 <a href="https://github.com/flink-china/flink-china-doc" target="_blank" rel="external">GitHub 上的项目</a>。</p>
+<h3 id="译者"><a href="#译者" class="headerlink" title="译者"></a>译者</h3><p><strong>如果你想要参与翻译一篇文章，请先在 <a href="https://github.com/flink-china/flink-china-doc/issues" target="_blank" rel="external">issue</a> 页面中查看是否已经有人在翻译这篇文档。如果没有，你可以发布一个 issue 或者回复某个模块的 issue，说明你要认领的文档。</strong></p>
+<p>推荐的翻译流程是:</p>
+<ol>
+<li>在 issue 页面认领文章。</li>
+<li>fork <a href="https://github.com/flink-china/flink-china-doc" target="_blank" rel="external">flink-china-doc</a> 项目。</li>
+<li>clone 你 fork 的项目到本地。</li>
+<li>找到你认领文章对应的 markdown 文件进行翻译。</li>
+<li>将你翻译的结果 push 到你 clone 的仓库中。</li>
+<li>通过提交 <a href="https://help.github.com/articles/using-pull-requests/" target="_blank" rel="external">Pull Request</a> 的方式提交你的翻译结果。</li>
+<li>在 PR 的评论中 @flink-china/review 邀请校对人员进行审核。</li>
+</ol>
+<p>翻译的时候，我们建议您直接在原 markdown 文件上进行翻译，也就是直接将原文档中的英文<strong>替换</strong>成你翻译的中文，文中原有的目录、公式、代码、表格等内容都不用动。更多翻译细则请参考 <a href="https://github.com/flink-china/flink-china-doc#翻译" target="_blank" rel="external">README</a>。</p>
+<p>译文需要至少一位校对人员 +1 后才能被 merge 。</p>
+<p>你会发现这种方式翻译方式是很高效的，无需重新排版、无需复制代码、无需编辑公式、无需调整琐碎的站内链接。</p>
+<h3 id="校对"><a href="#校对" class="headerlink" title="校对"></a>校对</h3><p>我们也非常欢迎校对的加入，您可以直接在<strong>本文下方留言您的 GitHub 帐号</strong>，我们会将您添加到校对组中。当译者提交 PR 后，会通过  @flink-china/review 的方式提醒您审核。</p>
+<p>校对的方式也非常方便，这主要归功于 GitHub 。如这个 <a href="https://github.com/flink-china/flink-china-doc/pull/6" target="_blank" rel="external">PR</a>，可以很方便地对比英文原文和中文译文，并提出修改意见 ：</p>
+<p><img src="http://ww2.sinaimg.cn/large/81b78497jw1f1pe9xff1zj20iu0a9t9p.jpg" alt=""></p>
+<p>我们会尽量保证严格的校对标准，让用户享受到更高质量的中文文档体验。</p>
+<p>如果你对开源协作方式感兴趣，如果你对翻译感兴趣，如果你对 Flink、流计算感兴趣，这都是一个非常绝佳的参与机会。我们会在 <a href="http://doc.flink-china.org/about/#thanks" target="_blank" rel="external">致谢页面</a> 感谢您的付出。</p>
+</div></article></div></section><footer><div class="paginator"></div><div data-thread-key="2016/03/08/flink-documentation-translation-project/" data-title="Apache Flink 官方文档翻译开源项目" data-url="http://blog.flink-china.org/2016/03/08/flink-documentation-translation-project/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"flinkchina"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2016 <a href="http://blog.flink-china.org">Apache Flink China</a>, unless otherwise noted.</p></div></footer><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d3c510fb797d20c510b539790be20773";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
