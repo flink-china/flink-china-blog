@@ -1526,7 +1526,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #67ff8a;
+  background: #c3af8e;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -2077,7 +2077,7 @@ a.at-share-btn:hover {
   margin-top: 15px;
 }
 .custom-logo-image {
-  max-width: 400px;
+  max-width: 300px;
 }
 .site-author-image {
   border: none;
