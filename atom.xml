@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.flink-china.org/"/>
-  <updated>2016-03-08T15:45:07.000Z</updated>
+  <updated>2016-03-09T02:37:53.000Z</updated>
   <id>http://blog.flink-china.org/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://blog.flink-china.org/2016/03/08/flink-documentation-translation-project/"/>
     <id>http://blog.flink-china.org/2016/03/08/flink-documentation-translation-project/</id>
     <published>2016-03-08T05:47:18.000Z</published>
-    <updated>2016-03-08T15:45:07.000Z</updated>
+    <updated>2016-03-09T02:37:53.000Z</updated>
     
     <content type="html">&lt;p&gt;Flink 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，并在其上建立了批处理和流处理引擎。&lt;/p&gt;
 &lt;p&gt;Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人员提供有价值的中文资料，并推动 Flink 在国内的发展。希望能够对大家的工作和学习有所帮助。&lt;/p&gt;
-&lt;p&gt;本次翻译主要内容是 &lt;a href=&quot;https://ci.apache.org/projects/flink/flink-docs-master/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Flink 官方文档 1.0 版本&lt;/a&gt;，也就是即将发布的下一个大版本。您可以浏览 &lt;a href=&quot;http://doc.flink-china.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Flink 中文文档&lt;/a&gt; 查看我们目前的翻译进度。&lt;/p&gt;
+&lt;p&gt;本次翻译主要内容是 &lt;a href=&quot;https://ci.apache.org/projects/flink/flink-docs-master/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Flink 官方文档 1.0 版本&lt;/a&gt;，也就是即将发布的下一个大版本（刚发现 Flink 官方今天 &lt;a href=&quot;http://flink.apache.org/news/2016/03/08/release-1.0.0.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;发布了 1.0&lt;/a&gt;  ）。您可以浏览 &lt;a href=&quot;http://doc.flink-china.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Flink 中文文档&lt;/a&gt; 查看我们目前的翻译进度。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;参与方式&quot;&gt;&lt;a href=&quot;#参与方式&quot; class=&quot;headerlink&quot; title=&quot;参与方式&quot;&gt;&lt;/a&gt;参与方式&lt;/h2&gt;&lt;p&gt;我们主要以开源协作的方式来组织翻译，您可以浏览我们在 &lt;a href=&quot;https://github.com/flink-china/flink-china-doc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub 上的项目&lt;/a&gt;。&lt;/p&gt;
 &lt;h3 id=&quot;译者&quot;&gt;&lt;a href=&quot;#译者&quot; class=&quot;headerlink&quot; title=&quot;译者&quot;&gt;&lt;/a&gt;译者&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;如果你想要参与翻译一篇文章，请先在 &lt;a href=&quot;https://github.com/flink-china/flink-china-doc/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issue&lt;/a&gt; 页面中查看是否已经有人在翻译这篇文档。如果没有，你可以发布一个 issue 或者回复某个模块的 issue，说明你要认领的文档。&lt;/strong&gt;&lt;/p&gt;
@@ -52,7 +52,7 @@
     
       &lt;p&gt;Flink 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，并在其上建立了批处理和流处理引擎。&lt;/p&gt;
 &lt;p&gt;Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人员提供有价值的中文资料，并推动 Flink 在国内的发展。希望能够对大家的工作和学习有所帮助。&lt;/p&gt;
-&lt;p&gt;本次翻译主要内容是 &lt;a href=&quot;https://ci.apache.org/projects/flink/flink-docs-master/&quot;&gt;Flink 官方文档 1.0 版本&lt;/a&gt;，也就是即将发布的下一个大版本。您可以浏览 &lt;a href=&quot;http://doc.flink-china.org/&quot;&gt;Flink 中文文档&lt;/a&gt; 查看我们目前的翻译进度。&lt;/p&gt;
+&lt;p&gt;本次翻译主要内容是 &lt;a href=&quot;https://ci.apache.org/projects/flink/flink-docs-master/&quot;&gt;Flink 官方文档 1.0 版本&lt;/a&gt;，也就是即将发布的下一个大版本（刚发现 Flink 官方今天 &lt;a href=&quot;http://flink.apache.org/news/2016/03/08/release-1.0.0.html&quot;&gt;发布了 1.0&lt;/a&gt;  ）。您可以浏览 &lt;a href=&quot;http://doc.flink-china.org/&quot;&gt;Flink 中文文档&lt;/a&gt; 查看我们目前的翻译进度。&lt;/p&gt;
     
     </summary>
     
