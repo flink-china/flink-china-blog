@@ -7,7 +7,7 @@ Flink 是一个开源的针对批量数据和流数据的处理引擎，已经�
 
 Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人员提供有价值的中文资料，并推动 Flink 在国内的发展。希望能够对大家的工作和学习有所帮助。
 
-本次翻译主要内容是 [Flink 官方文档 1.0 版本](https://ci.apache.org/projects/flink/flink-docs-master/)，也就是即将发布的下一个大版本。您可以浏览 [Flink 中文文档](http://doc.flink-china.org/) 查看我们目前的翻译进度。
+本次翻译主要内容是 [Flink 官方文档 1.0 版本](https://ci.apache.org/projects/flink/flink-docs-master/)，也就是即将发布的下一个大版本（刚发现 Flink 官方今天 [发布了 1.0](http://flink.apache.org/news/2016/03/08/release-1.0.0.html)  ）。您可以浏览 [Flink 中文文档](http://doc.flink-china.org/) 查看我们目前的翻译进度。
 
 <!-- more -->
 
@@ -41,7 +41,7 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
 
 校对的方式也非常方便，这主要归功于 GitHub 。如这个 [PR](https://github.com/flink-china/flink-china-doc/pull/6)，可以很方便地对比英文原文和中文译文，并提出修改意见 ：
 
-![](http://ww2.sinaimg.cn/large/81b78497jw1f1pe9xff1zj20iu0a9t9p.jpg)
+![](http://ww4.sinaimg.cn/large/81b78497gw1f1pvxekzlhj211g0kktbl.jpg)
 
 我们会尽量保证严格的校对标准，让用户享受到更高质量的中文文档体验。
 

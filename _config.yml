@@ -5,9 +5,10 @@
 # Site
 title: Flink China
 subtitle: 
-description: 致力于让国内用户不受语言限制，拥有更多资源学习讨论新兴的 Apache Flink 相关技术。
+description: 致力于让国内用户不受语言限制，第一时间学习到最新的 Apache Flink 相关技术。
 author: Apache Flink China
-language: zh-cn      #zh-Hans
+#language: zh-cn
+language: zh-Hans
 timezone:
 
 # URL
@@ -69,7 +70,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: apollo         #next
+theme: next
+#theme: apollo
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
