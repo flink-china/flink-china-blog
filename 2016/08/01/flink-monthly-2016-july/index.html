@@ -63,21 +63,22 @@
 
 
 
-<meta name="description" content="Flink 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，并在其上建立了批处理和流处理引擎。
-Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人">
+<meta name="description" content="2016-07-01
+[Blog] Building Applications with Apache Flink (Part 1): Dataset, Data Preparation and Building a Model, Philipp Wagner http://bytefish.de/blog/apache_flink_series_1/
+[Blog] Building Applic">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Apache Flink 官方文档翻译开源项目">
-<meta property="og:url" content="http://blog.flink-china.org/2016/03/08/flink-documentation-translation-project/index.html">
+<meta property="og:title" content="Apache Flink 月报 - 2016/07">
+<meta property="og:url" content="http://blog.flink-china.org/2016/08/01/flink-monthly-2016-july/index.html">
 <meta property="og:site_name" content="Flink China">
-<meta property="og:description" content="Flink 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，并在其上建立了批处理和流处理引擎。
-Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/81b78497gw1f1pvxekzlhj211g0kktbl.jpg">
-<meta property="og:updated_time" content="2016-03-09T02:37:53.000Z">
+<meta property="og:description" content="2016-07-01
+[Blog] Building Applications with Apache Flink (Part 1): Dataset, Data Preparation and Building a Model, Philipp Wagner http://bytefish.de/blog/apache_flink_series_1/
+[Blog] Building Applic">
+<meta property="og:updated_time" content="2016-08-05T06:56:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Apache Flink 官方文档翻译开源项目">
-<meta name="twitter:description" content="Flink 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，并在其上建立了批处理和流处理引擎。
-Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人">
-<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/81b78497gw1f1pvxekzlhj211g0kktbl.jpg">
+<meta name="twitter:title" content="Apache Flink 月报 - 2016/07">
+<meta name="twitter:description" content="2016-07-01
+[Blog] Building Applications with Apache Flink (Part 1): Dataset, Data Preparation and Building a Model, Philipp Wagner http://bytefish.de/blog/apache_flink_series_1/
+[Blog] Building Applic">
 
 
 
@@ -95,7 +96,7 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
   };
 </script>
 
-  <title> Apache Flink 官方文档翻译开源项目 | Flink China </title>
+  <title> Apache Flink 月报 - 2016/07 | Flink China </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -263,7 +264,7 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
             
             
               
-                Apache Flink 官方文档翻译开源项目
+                Apache Flink 月报 - 2016/07
               
             
           </h1>
@@ -275,8 +276,8 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-08T13:47:18+08:00" content="2016-03-08">
-              2016-03-08
+            <time itemprop="dateCreated" datetime="2016-08-01T14:15:51+08:00" content="2016-08-01">
+              2016-08-01
             </time>
           </span>
 
@@ -286,8 +287,8 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/08/flink-documentation-translation-project/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/08/flink-documentation-translation-project/" itemprop="commentsCount"></span>
+                <a href="/2016/08/01/flink-monthly-2016-july/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/01/flink-monthly-2016-july/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -316,30 +317,66 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
       
 
       
-        <p>Flink 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，并在其上建立了批处理和流处理引擎。</p>
-<p>Flink 凭借优异的性能以及在流计算领域的领先，使得其在国外越来越火热，发展速度越来越快。而国内却知之甚少，这也是我们发起官方文档翻译项目的主要原因。希望能够为对 Flink 感兴趣和从事大数据开发人员提供有价值的中文资料，并推动 Flink 在国内的发展。希望能够对大家的工作和学习有所帮助。</p>
-<p>本次翻译主要内容是 <a href="https://ci.apache.org/projects/flink/flink-docs-master/" target="_blank" rel="external">Flink 官方文档 1.0 版本</a>，也就是即将发布的下一个大版本（刚发现 Flink 官方今天 <a href="http://flink.apache.org/news/2016/03/08/release-1.0.0.html" target="_blank" rel="external">发布了 1.0</a>  ）。您可以浏览 <a href="http://doc.flink-china.org/" target="_blank" rel="external">Flink 中文文档</a> 查看我们目前的翻译进度。</p>
+        <h2 id="2016-07-01"><a href="#2016-07-01" class="headerlink" title="2016-07-01"></a>2016-07-01</h2><ul>
+<li>[Blog] Building Applications with Apache Flink (Part 1): Dataset, Data Preparation and Building a Model, Philipp Wagner <a href="http://bytefish.de/blog/apache_flink_series_1/" target="_blank" rel="external">http://bytefish.de/blog/apache_flink_series_1/</a></li>
+<li>[Blog] Building Applications with Apache Flink (Part 2): Writing a custom SourceFunction for the CSV Data, Philipp Wagner <a href="http://bytefish.de/blog/apache_flink_series_2/" target="_blank" rel="external">http://bytefish.de/blog/apache_flink_series_2/</a></li>
+<li>[Blog] Building Applications with Apache Flink (Part 3): Stream Processing with the DataStream API, Philipp Wagner  <a href="http://bytefish.de/blog/apache_flink_series_3/" target="_blank" rel="external">http://bytefish.de/blog/apache_flink_series_3/</a></li>
+<li>[Blog] Building Applications with Apache Flink (Part 4): Writing and Using a custom PostgreSQL SinkFunction, Philipp Wagner <a href="http://bytefish.de/blog/apache_flink_series_4/" target="_blank" rel="external">http://bytefish.de/blog/apache_flink_series_4/</a></li>
+<li>[Meetup] Querying Real-Time data, Zhenhao Li. Apache Flink London Meetup.<br>Slides: <a href="http://www.slideshare.net/ZhenhaoLi/flink-london-meetup-talk-63829077" target="_blank" rel="external">http://www.slideshare.net/ZhenhaoLi/flink-london-meetup-talk-63829077</a><br>Video: <a href="https://skillsmatter.com/skillscasts/8052-apache-flink-july-meetup" target="_blank" rel="external">https://skillsmatter.com/skillscasts/8052-apache-flink-july-meetup</a></li>
+<li>[Meetup] Complex Event Processing using Flink CEP library, Mark Summer. Apache Flink London Meetup. Video: <a href="https://skillsmatter.com/skillscasts/8492-complex-event-processing-using-flink-cep-library" target="_blank" rel="external">https://skillsmatter.com/skillscasts/8492-complex-event-processing-using-flink-cep-library</a></li>
+<li>[Article] All the Apache Streaming Projects: An Exploratory Guide <a href="http://thenewstack.io/apache-streaming-projects-exploratory-guide/" target="_blank" rel="external">http://thenewstack.io/apache-streaming-projects-exploratory-guide/</a></li>
+<li>[Blog] Building Applications with Apache Flink (Part 5): Complex Event Processing with Apache Flink <a href="http://bytefish.de/blog/apache_flink_series_5/" target="_blank" rel="external">http://bytefish.de/blog/apache_flink_series_5/</a></li>
+<li>[Conference talk]   Performance Comparison of Streaming Big Data Platforms, Hadoop Summit <a href="http://www.slideshare.net/HadoopSummit/performance-comparison-of-streaming-big-data-platforms" target="_blank" rel="external">http://www.slideshare.net/HadoopSummit/performance-comparison-of-streaming-big-data-platforms</a></li>
+</ul>
 <a id="more"></a>
-<h2 id="参与方式"><a href="#参与方式" class="headerlink" title="参与方式"></a>参与方式</h2><p>我们主要以开源协作的方式来组织翻译，您可以浏览我们在 <a href="https://github.com/flink-china/flink-china-doc" target="_blank" rel="external">GitHub 上的项目</a>。</p>
-<h3 id="译者"><a href="#译者" class="headerlink" title="译者"></a>译者</h3><p><strong>如果你想要参与翻译一篇文章，请先在 <a href="https://github.com/flink-china/flink-china-doc/issues" target="_blank" rel="external">issue</a> 页面中查看是否已经有人在翻译这篇文档。如果没有，你可以发布一个 issue 或者回复某个模块的 issue，说明你要认领的文档。</strong></p>
-<p>推荐的翻译流程是:</p>
-<ol>
-<li>在 issue 页面认领文章。</li>
-<li>fork <a href="https://github.com/flink-china/flink-china-doc" target="_blank" rel="external">flink-china-doc</a> 项目。</li>
-<li>clone 你 fork 的项目到本地。</li>
-<li>找到你认领文章对应的 markdown 文件进行翻译。</li>
-<li>将你翻译的结果 push 到你 clone 的仓库中。</li>
-<li>通过提交 <a href="https://help.github.com/articles/using-pull-requests/" target="_blank" rel="external">Pull Request</a> 的方式提交你的翻译结果。</li>
-<li>在 PR 的评论中 @flink-china/review 邀请校对人员进行审核。</li>
-</ol>
-<p>翻译的时候，我们建议您直接在原 markdown 文件上进行翻译，也就是直接将原文档中的英文<strong>替换</strong>成你翻译的中文，文中原有的目录、公式、代码、表格等内容都不用动。更多翻译细则请参考 <a href="https://github.com/flink-china/flink-china-doc#翻译" target="_blank" rel="external">README</a>。</p>
-<p>译文需要至少一位校对人员 +1 后才能被 merge 。</p>
-<p>你会发现这种方式翻译方式是很高效的，无需重新排版、无需复制代码、无需编辑公式、无需调整琐碎的站内链接。</p>
-<h3 id="校对"><a href="#校对" class="headerlink" title="校对"></a>校对</h3><p>我们也非常欢迎校对的加入，您可以直接在<strong>本文下方留言您的 GitHub 帐号</strong>，我们会将您添加到校对组中。当译者提交 PR 后，会通过  @flink-china/review 的方式提醒您审核。</p>
-<p>校对的方式也非常方便，这主要归功于 GitHub 。如这个 <a href="https://github.com/flink-china/flink-china-doc/pull/6" target="_blank" rel="external">PR</a>，可以很方便地对比英文原文和中文译文，并提出修改意见 ：</p>
-<p><img src="http://ww4.sinaimg.cn/large/81b78497gw1f1pvxekzlhj211g0kktbl.jpg" alt=""></p>
-<p>我们会尽量保证严格的校对标准，让用户享受到更高质量的中文文档体验。</p>
-<p>如果你对开源协作方式感兴趣，如果你对翻译感兴趣，如果你对 Flink、流计算感兴趣，这都是一个非常绝佳的参与机会。我们会在 <a href="http://doc.flink-china.org/about/#thanks" target="_blank" rel="external">致谢页面</a> 感谢您的付出。</p>
+<h2 id="2016-07-09"><a href="#2016-07-09" class="headerlink" title="2016-07-09"></a>2016-07-09</h2><ul>
+<li>[Blog] Flink类型系统的根Value及基本接口, <a href="http://vinoyang.com/2016/07/09/flink-type-system-Value-and-interfaces/" target="_blank" rel="external">http://vinoyang.com/2016/07/09/flink-type-system-Value-and-interfaces/</a></li>
+</ul>
+<h2 id="2016-07-11"><a href="#2016-07-11" class="headerlink" title="2016-07-11"></a>2016-07-11</h2><ul>
+<li>[Meetup] Don’t Cross The Streams - Data Streaming And Apache Flink <a href="http://www.meetup.com/hadoop-user-group-ireland/events/232023668/" target="_blank" rel="external">http://www.meetup.com/hadoop-user-group-ireland/events/232023668/</a> Slides: <a href="http://www.slideshare.net/jp_gorman/dont-cross-the-streams-data-streaming-and-apache-flink" target="_blank" rel="external">http://www.slideshare.net/jp_gorman/dont-cross-the-streams-data-streaming-and-apache-flink</a></li>
+<li>[Code] Apache Flink on Google Cloud Dataproc cluster <a href="https://github.com/GoogleCloudPlatform/dataproc-initialization-actions/tree/master/flink" target="_blank" rel="external">https://github.com/GoogleCloudPlatform/dataproc-initialization-actions/tree/master/flink</a></li>
+</ul>
+<h2 id="2016-07-13"><a href="#2016-07-13" class="headerlink" title="2016-07-13"></a>2016-07-13</h2><ul>
+<li>[Talk] Data Intensive Applications with Apache Flink, Data Science Milan Simone Robutti <a href="http://www.slideshare.net/chobeat/data-intensive-applications-with-apache-flink" target="_blank" rel="external">http://www.slideshare.net/chobeat/data-intensive-applications-with-apache-flink</a> Slides: <a href="http://www.slideshare.net/ds_mi/data-intensive-applications-with-apache-flink-simone-robutti-radicalbit" target="_blank" rel="external">http://www.slideshare.net/ds_mi/data-intensive-applications-with-apache-flink-simone-robutti-radicalbit</a> Video: <a href="https://www.youtube.com/watch?v=ABQoQ3-pBI4" target="_blank" rel="external">https://www.youtube.com/watch?v=ABQoQ3-pBI4</a></li>
+<li>[Meetup] Robust Stream Processing with Apache Flink, NYC Apache Flink Meetup, Jamie Grier, <a href="http://www.meetup.com/NYCFlink/events/232306611/" target="_blank" rel="external">http://www.meetup.com/NYCFlink/events/232306611/</a></li>
+<li>[Article] Spark versus Flink – Rumble in the (Big Data) Jungle <a href="http://www.heise.de/developer/artikel/Spark-versus-Flink-Rumble-in-the-Big-Data-Jungle-3264705.html" target="_blank" rel="external">http://www.heise.de/developer/artikel/Spark-versus-Flink-Rumble-in-the-Big-Data-Jungle-3264705.html</a></li>
+</ul>
+<h2 id="2016-07-16"><a href="#2016-07-16" class="headerlink" title="2016-07-16"></a>2016-07-16</h2><ul>
+<li>[Blog] Batch Vs. Stream Processing  <a href="http://www.cubicnodes.com/2016/07/16/batch-vs-stream-processing" target="_blank" rel="external">http://www.cubicnodes.com/2016/07/16/batch-vs-stream-processing</a></li>
+</ul>
+<h2 id="2016-07-17"><a href="#2016-07-17" class="headerlink" title="2016-07-17"></a>2016-07-17</h2><ul>
+<li>[Blog] Apache Flink流作业提交流程分析, <a href="http://vinoyang.com/2016/07/17/flink-streaming-job-submit/" target="_blank" rel="external">http://vinoyang.com/2016/07/17/flink-streaming-job-submit/</a></li>
+</ul>
+<h2 id="2016-07-18"><a href="#2016-07-18" class="headerlink" title="2016-07-18"></a>2016-07-18</h2><ul>
+<li>[Conference] Program of the 2016 Flink Forward conference <a href="http://flink-forward.org/program/sessions/" target="_blank" rel="external">http://flink-forward.org/program/sessions/</a></li>
+</ul>
+<h2 id="2016-07-19"><a href="#2016-07-19" class="headerlink" title="2016-07-19"></a>2016-07-19</h2><ul>
+<li>[Meetup] The Flink - Apache Bigtop integration, Bay Area Apache Flink Meetup, Márton Balassi <a href="http://www.meetup.com/Bay-Area-Apache-Flink-Meetup/events/232580562Slides" target="_blank" rel="external">http://www.meetup.com/Bay-Area-Apache-Flink-Meetup/events/232580562Slides</a>: <a href="http://www.slideshare.net/MrtonBalassi/the-flink-apache-bigtop-integration" target="_blank" rel="external">http://www.slideshare.net/MrtonBalassi/the-flink-apache-bigtop-integration</a></li>
+<li>[Meetup] Stream Processing with Apache Flink, Apache Flink Taiwan User Group, Robert Metzger<br><a href="http://www.meetup.com/flink-tw/events/231707894/" target="_blank" rel="external">http://www.meetup.com/flink-tw/events/231707894/</a><br>Slides: <a href="http://www.slideshare.net/flink-taiwan/stream-processing-with-apache-flink-flinktw-meetup-20160719" target="_blank" rel="external">http://www.slideshare.net/flink-taiwan/stream-processing-with-apache-flink-flinktw-meetup-20160719</a><br>Video: <a href="https://www.youtube.com/watch?v=GWxyiTY-1uQ" target="_blank" rel="external">https://www.youtube.com/watch?v=GWxyiTY-1uQ</a></li>
+<li>[Meetup] An Introduction to Apache Flink CEP Library, Apache Flink Taiwan User Group, Gordon Tai <a href="http://www.meetup.com/flink-tw/events/231707894/" target="_blank" rel="external">http://www.meetup.com/flink-tw/events/231707894/</a><br>Slides: <a href="http://www.slideshare.net/flink-taiwan/complex-event-processing-use-cases-flinkcep-library-flinktw-meetup-20160719" target="_blank" rel="external">http://www.slideshare.net/flink-taiwan/complex-event-processing-use-cases-flinkcep-library-flinktw-meetup-20160719</a><br>Video: <a href="https://www.youtube.com/watch?v=Uho24uN1YZQ" target="_blank" rel="external">https://www.youtube.com/watch?v=Uho24uN1YZQ</a></li>
+<li>[Blog] Apache Flink vs Spark – Will one overtake the other? <a href="https://www.dezyre.com/article/apache-flink-vs-spark-will-one-overtake-the-other/282?from=twitter" target="_blank" rel="external">https://www.dezyre.com/article/apache-flink-vs-spark-will-one-overtake-the-other/282?from=twitter</a></li>
+<li>[Blog] Mid-year Updates for Big Data Trends: Apache Kafka, Spark, Flink, Drill and More, Ellen Friedman <a href="https://www.mapr.com/blog/mid-year-updates-big-data-trends-apache-kafka-spark-flink-drill-and-more" target="_blank" rel="external">https://www.mapr.com/blog/mid-year-updates-big-data-trends-apache-kafka-spark-flink-drill-and-more</a></li>
+</ul>
+<h2 id="2016-07-20"><a href="#2016-07-20" class="headerlink" title="2016-07-20"></a>2016-07-20</h2><ul>
+<li>[Whiteboard Walkthrough] Savepoints in Apache Flink Stream Processing, Stephan Ewen <a href="https://www.youtube.com/watch?v=9VjiIKco3bE" target="_blank" rel="external">https://www.youtube.com/watch?v=9VjiIKco3bE</a></li>
+<li>[Paper] Spark versus Flink: Understanding Performance in Big Data Analytics Frameworks, Ovidiu-Cristian Marcu, Alexandru Costan, Gabriel Antoniu, Mara S. Perez. Spark <a href="https://hal.inria.fr/hal-01347638/document" target="_blank" rel="external">https://hal.inria.fr/hal-01347638/document</a></li>
+</ul>
+<h2 id="2016-07-21"><a href="#2016-07-21" class="headerlink" title="2016-07-21"></a>2016-07-21</h2><ul>
+<li>[Meetup] KNN with Apache Flink,  Dan Blazevski. NYC Data Engineering. <a href="http://www.meetup.com/NYC-Data-Engineering/events/232140804/" target="_blank" rel="external">http://www.meetup.com/NYC-Data-Engineering/events/232140804/</a></li>
+<li>[Blog] Savepoints in Apache Flink Stream Processing, Stephan Ewen <a href="https://www.mapr.com/blog/savepoints-apache-flink-stream-processing-whiteboard-walkthrough" target="_blank" rel="external">https://www.mapr.com/blog/savepoints-apache-flink-stream-processing-whiteboard-walkthrough</a></li>
+</ul>
+<h2 id="2016-07-23"><a href="#2016-07-23" class="headerlink" title="2016-07-23"></a>2016-07-23</h2><ul>
+<li>[Blog] Apache Flink Client生成StreamGraph, <a href="http://vinoyang.com/2016/07/23/flink-streaming-job-generate-stream-graph/" target="_blank" rel="external">http://vinoyang.com/2016/07/23/flink-streaming-job-generate-stream-graph/</a></li>
+</ul>
+<h2 id="2016-07-25"><a href="#2016-07-25" class="headerlink" title="2016-07-25"></a>2016-07-25</h2><ul>
+<li>[Blog] Why We Love Apache Flink? <a href="http://radicalbit.io/love-apache-flink/" target="_blank" rel="external">http://radicalbit.io/love-apache-flink/</a></li>
+</ul>
+<h2 id="2016-07-27"><a href="#2016-07-27" class="headerlink" title="2016-07-27"></a>2016-07-27</h2><ul>
+<li>[Meetup] Introduction to large-scale Machine Learning with Apache Flink,  Theodore Vasiloudis. Big Data Application Meetup<br><a href="http://www.meetup.com/Bay-Area-Apache-Flink-Meetup/events/232509629/" target="_blank" rel="external">http://www.meetup.com/Bay-Area-Apache-Flink-Meetup/events/232509629/</a><br>Slides: <a href="http://www.slideshare.net/TheodorosVasiloudis/flinkml-big-data-application-meetup" target="_blank" rel="external">http://www.slideshare.net/TheodorosVasiloudis/flinkml-big-data-application-meetup</a></li>
+</ul>
+<h2 id="2016-07-31"><a href="#2016-07-31" class="headerlink" title="2016-07-31"></a>2016-07-31</h2><ul>
+<li>[Blog] Social Media Analysis Using Apache Flink  <a href="https://acadgild.com/blog/social-media-analysis-using-apache-flink/" target="_blank" rel="external">https://acadgild.com/blog/social-media-analysis-using-apache-flink/</a></li>
+</ul>
 
       
     </div>
@@ -356,10 +393,10 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
       
       <div class="post-spread">
         
-          <div class="ds-share flat" data-thread-key="2016/03/08/flink-documentation-translation-project/"
-     data-title="Apache Flink 官方文档翻译开源项目"
+          <div class="ds-share flat" data-thread-key="2016/08/01/flink-monthly-2016-july/"
+     data-title="Apache Flink 月报 - 2016/07"
      data-content="（分享自 @黑桃夹克）"
-     data-url="http://blog.flink-china.org/2016/03/08/flink-documentation-translation-project/">
+     data-url="http://blog.flink-china.org/2016/08/01/flink-monthly-2016-july/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -382,12 +419,16 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/08/flink-documentation-translation-project/" rel="next" title="Apache Flink 官方文档翻译开源项目">
+                <i class="fa fa-chevron-left"></i> Apache Flink 官方文档翻译开源项目
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/01/flink-monthly-2016-july/" rel="prev" title="Apache Flink 月报 - 2016/07">
-                Apache Flink 月报 - 2016/07 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/08/05/flink-monthly-2016-08/" rel="prev" title="Apache Flink 月报 - 2016/08 (持续更新)">
+                Apache Flink 月报 - 2016/08 (持续更新) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -411,8 +452,8 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/08/flink-documentation-translation-project/"
-           data-title="Apache Flink 官方文档翻译开源项目" data-url="http://blog.flink-china.org/2016/03/08/flink-documentation-translation-project/">
+      <div class="ds-thread" data-thread-key="2016/08/01/flink-monthly-2016-july/"
+           data-title="Apache Flink 月报 - 2016/07" data-url="http://blog.flink-china.org/2016/08/01/flink-monthly-2016-july/">
       </div>
     
   </div>
@@ -512,7 +553,7 @@ Flink 凭借优异的性能以及在流计算领域的领先，使得其在国�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#参与方式"><span class="nav-number">1.</span> <span class="nav-text">参与方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#译者"><span class="nav-number">1.1.</span> <span class="nav-text">译者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#校对"><span class="nav-number">1.2.</span> <span class="nav-text">校对</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-01"><span class="nav-text">2016-07-01</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-09"><span class="nav-text">2016-07-09</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-11"><span class="nav-text">2016-07-11</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-13"><span class="nav-text">2016-07-13</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-16"><span class="nav-text">2016-07-16</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-17"><span class="nav-text">2016-07-17</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-18"><span class="nav-text">2016-07-18</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-19"><span class="nav-text">2016-07-19</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-20"><span class="nav-text">2016-07-20</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-21"><span class="nav-text">2016-07-21</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-23"><span class="nav-text">2016-07-23</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-25"><span class="nav-text">2016-07-25</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-27"><span class="nav-text">2016-07-27</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-07-31"><span class="nav-text">2016-07-31</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
